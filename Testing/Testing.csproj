@@ -7,6 +7,21 @@
 
 
   <ItemGroup>
-    <None Include="bin\Debug\net6.0\appsettings.json" />
+    <None Remove="Views\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="appsettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="MySql.Data" Version="8.0.32.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Product\" />
+    <Folder Include="bin\Debug\net6.0\" />
+    <Folder Include="bin\Debug\net6.0\runtimes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="appsettings.json" />
   </ItemGroup>
 </Project>
